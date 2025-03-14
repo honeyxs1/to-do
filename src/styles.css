@@ -94,3 +94,94 @@ header h1 {
     padding: 2rem;
 }
 
+
+
+dialog[open]{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    position: relative;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formHeading{
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+label{
+    font-size: 24px;
+}
+
+.addProject{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+input::selection{
+    background-color: #1f2937;
+    color: white;
+
+}
+
+.formButtons{
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.cancel{
+    background-color: #1f2937;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+.submit{
+    background-color: #1f2937;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
