@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do</title>
 </head>
+
 <body>
     <header>
         <nav>
             <h1># TO-DO</h1>
         </nav>
     </header>
-    
+
     <div class="container">
         <!-- Sidebar Area -->
-        <div class="sidebar" > 
+        <div class="sidebar">
             <div class="sidebarHead">
-                <h2>
-                    Projects
-                </h2>
-                <button id="add">Add+</button>
-                <dialog>
-                    <div class="addProject">
-                        <h2 class="formHeading">Add a Project</h2>
-                        <form id="projectForm">
-                            <div class="input">
-                                <label for="Name">Name</label>
-                                <input type="text" name="name" id="projectTitle" placeholder="Name of the Project" required>
-                            </div>
-                            <div class="formButtons">
-                                <button class="cancel">Cancel</button>
-                                <button class="submit">Add</button>
-                            </div>
-                        </form>
-                    </div>
-                </dialog>
+                <h2>Projects</h2>
+                <button id="addProject">Add+</button>
             </div>
-            <ul class="projectList">
-
-            </ul>
-
+            <div class="projectList"></div>
         </div>
+
         <!-- Content Area -->
         <div id="content">
-
+            <div class="todo-header">
+            </div>
+            <div class="todo-list"></div>
         </div>
     </div>
+
+    <!-- Project dialog box -->
+    <dialog id="projectDialog">
+        <div class="addProject">
+            <h2 class="formHeading">Add a Project</h2>
+            <form id="projectForm">
+                <div class="input">
+                    <label for="projectTitle">Name</label>
+                    <input type="text" name="name" id="projectTitle" placeholder="Name of the Project" required>
+                </div>
+                <div class="formButtons">
+                    <button type="button" class="cancel-project">Cancel</button>
+                    <button type="submit" class="submit-project">Add</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
 </body>
+
 </html>
